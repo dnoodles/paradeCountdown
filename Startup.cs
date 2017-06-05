@@ -44,8 +44,8 @@ namespace BoilerPlate
                 app.UseDeveloperExceptionPage();                
                 app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions {
                     HotModuleReplacement = true,
-                    ProjectPath = Path.Combine(Directory.GetCurrentDirectory(), "cdburner"),
-                    ConfigFile = Path.Combine(Directory.GetCurrentDirectory(), "cdburner/webpack.config.js") 
+                    ProjectPath = Path.Combine(Directory.GetCurrentDirectory(), "client"),
+                    ConfigFile = Path.Combine(Directory.GetCurrentDirectory(), "client/webpack.config.js") 
                 });
             }
             else
