@@ -53,7 +53,6 @@ namespace BoilerPlate
                 app.UseDefaultFiles();
                 app.UseStaticFiles();
             }
-
             app.UseMvc();
         }
     }

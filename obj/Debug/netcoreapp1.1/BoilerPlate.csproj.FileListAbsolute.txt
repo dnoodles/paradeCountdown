@@ -1,0 +1,8 @@
+C:\Users\dnudelman\Dev\BoilerPlate\bin\Debug\netcoreapp1.1\BoilerPlate.deps.json
+C:\Users\dnudelman\Dev\BoilerPlate\bin\Debug\netcoreapp1.1\BoilerPlate.runtimeconfig.json
+C:\Users\dnudelman\Dev\BoilerPlate\bin\Debug\netcoreapp1.1\BoilerPlate.runtimeconfig.dev.json
+C:\Users\dnudelman\Dev\BoilerPlate\obj\Debug\netcoreapp1.1\BoilerPlate.AssemblyInfo.cs
+C:\Users\dnudelman\Dev\BoilerPlate\bin\Debug\netcoreapp1.1\BoilerPlate.dll
+C:\Users\dnudelman\Dev\BoilerPlate\bin\Debug\netcoreapp1.1\BoilerPlate.pdb
+C:\Users\dnudelman\Dev\BoilerPlate\obj\Debug\netcoreapp1.1\BoilerPlate.dll
+C:\Users\dnudelman\Dev\BoilerPlate\obj\Debug\netcoreapp1.1\BoilerPlate.pdb
