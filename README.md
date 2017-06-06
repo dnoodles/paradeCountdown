@@ -1,16 +1,16 @@
-# ASPNet-VueJS-Webpack-BoilerPlate
-A boiler plate for a VueJS client and ASP.net server and using webpack for compiling.
+# ASPNET-VueJS-Webpack-BoilerPlate
+A boiler plate for creating SPA applications using VueJS/webpack and ASP.NET.
 
-  Quickly begin a new project with a basic starting point of a new VueJS project created from the Vue CLI while also utilizing ASPNET-Webpack and Microsoft spa services to accomplish hot-reloading and compiling on the same server.
+  Begin a new project with a basic starting point of a new VueJS project created from the Vue CLI tool while also utilizing ASPNET-Webpack and Microsoft SPA services to accomplish hot-reloading and compiling from within ASP.NET.
   
   How to start (assuming the use of vsCode):
     
-    1. open vscode and run git clone https://github.com/ZPDreamTeam/ASPNet-VueJS-Webpack-BoilerPlate.git.
+    1. Open vscode and run git clone https://github.com/ZPDreamTeam/ASPNET-VueJS-Webpack-BoilerPlate.git from the command line.
     2. Open the ASPNET-VUEJS-WEBPACK-BOILERPLATE folder and change BoilerPlate.csproj to "yourprojectname".csproj.
     3. Open startup.cs and highlight the word "BoilerPlate" as in namespace BoilerPlate and click f2 and in the box type "yourprojectname".
     4. After you hit enter it will repalce all instances of BoilerPlate with "yourprojectname".
-    5. open client\package.json and change the desctiption, author, and name if you would like.
-    6. run dotnet restore in the base directory of the project
+    5. Open client\package.json and change the desctiption, author, and name if you would like.
+    6. Run dotnet restore in the base directory of the project
     7. cd client
     8. run npm install
     9. cd ..
