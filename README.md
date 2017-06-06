@@ -10,11 +10,10 @@ A boiler plate for creating SPA applications using VueJS/webpack and ASP.NET.
     3. Open startup.cs and highlight the word "BoilerPlate" as in namespace BoilerPlate and click f2 and in the box type "yourprojectname".
     4. After you hit enter it will repalce all instances of BoilerPlate with "yourprojectname".
     5. Open client\package.json and change the desctiption, author, and name if you would like.
-
     
-    Now you can run the following commands:
-
-
+    
+  Now you can run the following commands:
+    
     1. 'dotnet restore' in the base directory of the project
     2. 'cd client'
     3. 'npm install'
