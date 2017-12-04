@@ -1,14 +1,14 @@
 <template>
   <div>
     <h1>Smithtown Fire Department</h1>
-    <h2>Holiday Parade Countdown</h2>
+    <h2>Christmas Parade Countdown</h2>
     <h1 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ') + days + (days === 1 ? ' day ' : ' days ') + hours +  (hours === 1 ? ' hour ' : ' hours ')  + minutes + (minutes === 1 ? ' minute ' : ' minutes ') + seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'holidayParade',
+  name: 'christmasParadeCountdown',
   data () {
     return {
       paradeDate: new Date('2017-12-16T22:00:00.000Z'),
