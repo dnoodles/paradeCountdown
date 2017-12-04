@@ -1,5 +1,7 @@
 <template>
   <div id="snow">
+    <h1 class="title">Smithtown Fire Department</h1>
+    <br />
     <router-view></router-view>
   </div>
 </template>
@@ -12,11 +14,24 @@ export default {
 
 <style>
 body { background-color:#333; }
+.title {
+  align-self: flex-start;
+  flex-basis: 100%;
+}
+
+h1 {
+  color: #fc000096;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: .3rem;    
+}
+
 #snow{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
@@ -30,6 +45,7 @@ body { background-color:#333; }
 	-moz-animation: snow 10s linear infinite;
 	-ms-animation: snow 10s linear infinite;
 	animation: snow 10s linear infinite;
+  padding-bottom: 30px;
 }
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}

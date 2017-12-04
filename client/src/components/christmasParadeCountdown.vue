@@ -1,12 +1,23 @@
 <template>
   <div>
-    <h1>Smithtown Fire Department</h1>
-    <h2>Christmas Parade Countdown</h2>
-    <!--<h3 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ')}}</h3>-->
-    <h3 id="countdown">{{days + (weeks*7) + (days === 1 ? ' day ' : ' days ')}}</h3>
-    <h3 id="countdown_green">{{hours +  (hours === 1 ? ' hour ' : ' hours ')}}</h3>
-    <h3 id="countdown">{{minutes + (minutes === 1 ? ' minute ' : ' minutes ')}}</h3>
-    <h3 id="countdown_green">{{seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h3>
+    <div id="countdownDiv">
+      <h2>Christmas Parade Countdown</h2>
+      <!--<h3 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ')}}</h3>-->
+      <div class="container">
+        <div class="child">
+          <h3 class="countdown">{{days + (weeks*7)}}</h3>
+          <h3 class="countdown bottomMargin">{{days === 1 ? ' day  ' : ' days '}}</h3>
+          <h3 class="countdown_green">{{minutes}}</h3>
+          <h3 class="countdown_green">{{minutes === 1 ? ' minute  ' : ' minutes '}}</h3>
+        </div>
+        <div class="child">
+          <h3 class="countdown">{{hours}}</h3>
+          <h3 class="countdown bottomMargin">{{hours === 1 ? ' hour  ' : ' hours '}}</h3>
+          <h3 class="countdown_green">{{seconds}}</h3>
+          <h3 class="countdown_green">{{seconds === 1 ? ' second  ' : ' seconds '}}</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -55,13 +66,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.title {
+  align-self: flex-start;
+}
+
 h1 {
   color: #fc000096;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
-  letter-spacing: .3rem;  
+  letter-spacing: .3rem;    
 }
+
 h2 {
   color: #04a004c7;
   text-transform: uppercase;
@@ -70,14 +86,38 @@ h2 {
   letter-spacing: .3rem;
 }
 
-#countdown {
+h3 {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.bottomMargin {
+  margin-bottom: 25%
+}
+
+.countdown {
   font-size: 1.4rem;
   letter-spacing: .3rem;
   color: #fc000096;
   text-transform: uppercase;
   text-align: center;
 }
-#countdown_green {
+.countdown_green {
   font-size: 1.4rem;
   letter-spacing: .3rem;
   color: #04a004c7;
