@@ -4,9 +4,9 @@
     <h2>Christmas Parade Countdown</h2>
     <!--<h3 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ')}}</h3>-->
     <h3 id="countdown">{{days + (weeks*7) + (days === 1 ? ' day ' : ' days ')}}</h3>
-    <h3 id="countdown">{{hours +  (hours === 1 ? ' hour ' : ' hours ')}}</h3>
+    <h3 id="countdown_green">{{hours +  (hours === 1 ? ' hour ' : ' hours ')}}</h3>
     <h3 id="countdown">{{minutes + (minutes === 1 ? ' minute ' : ' minutes ')}}</h3>
-    <h3 id="countdown">{{seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h3>
+    <h3 id="countdown_green">{{seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h3>
   </div>
 </template>
 
@@ -63,17 +63,24 @@ h1 {
   letter-spacing: .3rem;  
 }
 h2 {
-  color: #fc000096;
+  color: #04a004c7;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.0rem;
   letter-spacing: .3rem;
 }
 
-h3 {
+#countdown {
   font-size: 1.4rem;
   letter-spacing: .3rem;
   color: #fc000096;
+  text-transform: uppercase;
+  text-align: center;
+}
+#countdown_green {
+  font-size: 1.4rem;
+  letter-spacing: .3rem;
+  color: #04a004c7;
   text-transform: uppercase;
   text-align: center;
 }

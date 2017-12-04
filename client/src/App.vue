@@ -13,6 +13,10 @@ export default {
 <style>
 body { background-color:#333; }
 #snow{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
