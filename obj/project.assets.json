@@ -3230,7 +3230,7 @@
       ]
     },
     "Microsoft.AspNetCore/2.0.0": {
-      "sha512": "1fKQr058VLWkmbtHXW060FEf1dNbHCFv+Iwed9O4Thz8p+8dbf+CYjkyvhIDY1PEpY/bThtF2UtwsSF+stYnfQ==",
+      "sha512": "Pp4CNfgJgKTyU+oRQYh6InA1lwcZLi5ZsfTxWwixagbRsVdWrROBFnKGw+FvbbuzKNyMn4Cg5zRv99LjqxVIJA==",
       "type": "package",
       "path": "microsoft.aspnetcore/2.0.0",
       "files": [
@@ -3494,7 +3494,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity/2.0.0": {
-      "sha512": "Ca+FQs5psHSsSIwgGf+EvEzfG2yodzAd5r85thcOtPCpoTIZm/p3Z4vRJwtUSrb1vDSTR4w1T5YiWVXJSjgttA==",
+      "sha512": "Ax5mfrcZRI/1nGvHsi3mA9EvxCkleFnlmhd+ZMJ4PYHTHtL1o51vCMInYCd5oGuSCkRgXHn0U9bAfuQPpaCdvg==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity/2.0.0",
       "files": [
@@ -3527,7 +3527,7 @@
       ]
     },
     "Microsoft.AspNetCore.Mvc/2.0.0": {
-      "sha512": "lnyYgSgh5ZJvwo2WFJ1f2U6n8s+KU6URx4GfXFfhAD91zCM5PhT8k7DUwv7ZSuwGp7ZO8jQh2+eY2g7jZ7o3Lg==",
+      "sha512": "9KmSDGw3XXosv3+c7TX8An91ya+jtzbAuquHVp6t/qB1CA+MZI7r2d6n3dvUZUcKbrpmB8cfbvzbeEGv/QKp3Q==",
       "type": "package",
       "path": "microsoft.aspnetcore.mvc/2.0.0",
       "files": [
@@ -5371,7 +5371,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "Cu+w01Iak/Pzqr1eMbmb0z4dDPwVa/Gxutqmi7zP5zPMWdosx/+n1jeTvLlOPrS1fTv1WMMQl1J1Xx+PUBQsgA==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -5408,7 +5408,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "vCTbQY9N55bXxncDMFFxYxwA+d50evy6n58NYyCxXOt1FejSDJVO6Sm8kBSvBaRw1is9SAJc+nGwLiKyObhJ8w==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -5445,7 +5445,7 @@
       ]
     },
     "System.ComponentModel/4.3.0": {
-      "sha512": "cwN6ztEREUUYp11gEA5cKzfJbxMIo4Jxnlc24/UnzNKWmyvGw/D6w8pqtCT0yYq2JEY9Owwrcn3FRK9YMk5CYg==",
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "type": "package",
       "path": "system.componentmodel/4.3.0",
       "files": [
@@ -5587,7 +5587,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "yH+HflXQsx9AFmPF4+tYJ0/BE7jQsZDhj/2ZXtO2AGzc8RFbitBiR7B8WrSL+Q+dSvQTxouUA+ugPM9d61WxYA==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -5624,7 +5624,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "CswIyS0quJHAVuaMZe06xfRy4r3asFx96bbSPAnc6LQnAsjI8N0XiON45DUKgrEYQEQlJPdMjmW0R9g91Jx9zw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -5711,7 +5711,7 @@
       ]
     },
     "System.Diagnostics.Contracts/4.3.0": {
-      "sha512": "DRO6FeWptC5QIKdzYkpRW3q4avm8Bviwg5WtnA/Px91wxrtNQbrEtUsljkkw/xbE2tbYC3xYGVHNilafauOtdA==",
+      "sha512": "eelRRbnm+OloiQvp9CXS0ixjNQldjjkHO4iIkR5XH2VIP8sUB/SIpa1TdUW6/+HDcQ+MlhP3pNa1u5SbzYuWGA==",
       "type": "package",
       "path": "system.diagnostics.contracts/4.3.0",
       "files": [
@@ -5900,7 +5900,7 @@
       ]
     },
     "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "VVQWCpo00pBfpKUs6GkNHLWDsK0s1W7APNHBcfEYvy1EaVNNkb6V4L3AZwr2Ws2xH3/Rv3U6vifVuAMXIOZbMQ==",
+      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
       "type": "package",
       "path": "system.diagnostics.stacktrace/4.3.0",
       "files": [
@@ -6664,7 +6664,7 @@
       ]
     },
     "System.Net.WebSockets/4.3.0": {
-      "sha512": "s0KhHAJbJCflTdqNDfXHBoh+/ZOcmY6OnEzbBcPKmTxanNJ9A3yn8IgMjAHjTmJkKARMcVYE/xiYGIL1MRGXIw==",
+      "sha512": "u6fFNY5q4T8KerUAVbya7bR6b7muBuSTAersyrihkcmE5QhEOiH3t5rh4il15SexbVlpXFHGuMwr/m8fDrnkQg==",
       "type": "package",
       "path": "system.net.websockets/4.3.0",
       "files": [
@@ -8619,7 +8619,7 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "kEOzKq26f4PL227Q4vEVO1i3Y+Exrc665x9nrCmVLw+T2IapN26HVXID3qdNNBmsYviA1eDy5zHWh9Dn1sEtEg==",
+      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
@@ -8990,30 +8990,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dnudelman\\.nuget\\packages\\": {},
+    "C:\\Users\\ZPRAD\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dnudelman\\Dev\\BarcodeScanner\\BoilerPlate.csproj",
+      "projectUniqueName": "C:\\Users\\ZPRAD\\Desktop\\holidayParade\\BoilerPlate.csproj",
       "projectName": "BoilerPlate",
-      "projectPath": "C:\\Users\\dnudelman\\Dev\\BarcodeScanner\\BoilerPlate.csproj",
-      "packagesPath": "C:\\Users\\dnudelman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dnudelman\\Dev\\BarcodeScanner\\obj\\",
+      "projectPath": "C:\\Users\\ZPRAD\\Desktop\\holidayParade\\BoilerPlate.csproj",
+      "packagesPath": "C:\\Users\\ZPRAD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZPRAD\\Desktop\\holidayParade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dnudelman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ZPRAD\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9032,7 +9030,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "2.0",
             "autoReferenced": true
           },
           "Microsoft.AspNetCore.Server.WebListener": {

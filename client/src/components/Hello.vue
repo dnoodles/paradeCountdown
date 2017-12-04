@@ -1,32 +1,52 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <div>
+    <h1>Smithtown Fire Department</h1>
+    <h2>Holiday Parade Countdown</h2>
+    <h1 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ') + days + (days === 1 ? ' day ' : ' days ') + hours +  (hours === 1 ? ' hour ' : ' hours ')  + minutes + (minutes === 1 ? ' minute ' : ' minutes ') + seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'holidayParade',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      paradeDate: new Date('2017-12-16T22:00:00.000Z'),
+      weeks: null,
+      days: null,
+      hours: null,
+      minutes: null,
+      seconds: null
     }
+  },
+  mounted () {
+    var targetDate = new Date(this.paradeDate)
+    // find the amount of "seconds" between now and target
+    var currentDate = new Date().getTime()
+    var secondsLeft = (targetDate - currentDate) / 1000
+    // do some time calculations
+    this.weeks = parseInt(secondsLeft / 604800)
+    secondsLeft = secondsLeft % 604800
+    this.days = parseInt(secondsLeft / 86400)
+    secondsLeft = secondsLeft % 86400
+    this.hours = parseInt(secondsLeft / 3600)
+    secondsLeft = secondsLeft % 3600
+    this.minutes = parseInt(secondsLeft / 60)
+    this.seconds = parseInt(secondsLeft % 60)
+    setInterval(() => {
+      // find the amount of "seconds" between now and target
+      var currentDate = new Date().getTime()
+      var secondsLeft = (targetDate - currentDate) / 1000
+      // do some time calculations
+      this.weeks = parseInt(secondsLeft / 604800)
+      secondsLeft = secondsLeft % 604800
+      this.days = parseInt(secondsLeft / 86400)
+      secondsLeft = secondsLeft % 86400
+      this.hours = parseInt(secondsLeft / 3600)
+      secondsLeft = secondsLeft % 3600
+      this.minutes = parseInt(secondsLeft / 60)
+      this.seconds = parseInt(secondsLeft % 60)
+    }, 1000)
   }
 }
 </script>
@@ -34,20 +54,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+  color: #fc000096;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+h1 countdown {
+  margin-top: 10%
 }
 </style>
