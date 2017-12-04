@@ -57,9 +57,15 @@ h1, h2 {
   color: #fc000096;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 10%;
+  font-size: 2rem;
+  letter-spacing: .3rem;
 }
 
 h1 countdown {
-  margin-top: 10%
+  margin-top: 10%;
+  font-size: 3rem;
+  margin-top: 0;
+  letter-spacing: .1rem;
 }
 </style>
