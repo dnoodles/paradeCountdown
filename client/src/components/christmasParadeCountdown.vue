@@ -2,7 +2,11 @@
   <div>
     <h1>Smithtown Fire Department</h1>
     <h2>Christmas Parade Countdown</h2>
-    <h1 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ') + days + (days === 1 ? ' day ' : ' days ') + hours +  (hours === 1 ? ' hour ' : ' hours ')  + minutes + (minutes === 1 ? ' minute ' : ' minutes ') + seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h1>
+    <!--<h3 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ')}}</h3>-->
+    <h3 id="countdown">{{days + (weeks*7) + (days === 1 ? ' day ' : ' days ')}}</h3>
+    <h3 id="countdown">{{hours +  (hours === 1 ? ' hour ' : ' hours ')}}</h3>
+    <h3 id="countdown">{{minutes + (minutes === 1 ? ' minute ' : ' minutes ')}}</h3>
+    <h3 id="countdown">{{seconds + (seconds === 1 ? ' second ' : ' seconds ')}}</h3>
   </div>
 </template>
 
@@ -25,8 +29,6 @@ export default {
     var currentDate = new Date().getTime()
     var secondsLeft = (targetDate - currentDate) / 1000
     // do some time calculations
-    this.weeks = parseInt(secondsLeft / 604800)
-    secondsLeft = secondsLeft % 604800
     this.days = parseInt(secondsLeft / 86400)
     secondsLeft = secondsLeft % 86400
     this.hours = parseInt(secondsLeft / 3600)
@@ -53,19 +55,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1 {
   color: #fc000096;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 10%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: .3rem;  
+}
+h2 {
+  color: #fc000096;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.0rem;
   letter-spacing: .3rem;
 }
 
-h1 countdown {
-  margin-top: 10%;
-  font-size: 3rem;
-  margin-top: 0;
-  letter-spacing: .1rem;
+h3 {
+  font-size: 1.4rem;
+  letter-spacing: .3rem;
+  color: #fc000096;
+  text-transform: uppercase;
+  text-align: center;
 }
 </style>
