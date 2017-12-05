@@ -76,7 +76,8 @@ h1 {
   padding: 0;
 }
 .wire{
-  overflow-x:visible;
+  overflow-x: visible;
+  overflow-y: visible;  
   text-align: center;
   white-space: nowrap;
   position: absolute;
@@ -88,7 +89,6 @@ h1 {
 }
 
 .wire li{
-  overflow-x: hidden;
   position: relative;
   list-style: none;
   margin: 0 15px;
@@ -122,23 +122,23 @@ h1 {
 
 @keyframes even-flash {
   0%, 100%{
-    background: rgba(255,230,65,1);
-    box-shadow: 0px 2px 20px 4px rgba(255,230,65,1);
+    background: rgba(75, 255, 65, 0.9);
+    box-shadow: 0 2px 20px 4px #35da22e8;
   }
   50%{
-    background: rgba(255,230,65,0.5);
-    box-shadow: 0px 2px 20px 4px rgba(255,230,65,0.3);
+    background: rgba(75, 255, 65, 0.9);
+    box-shadow: 0 2px 20px 4px rgba(76, 255, 65, 0.48);
   }
 }
 
 @keyframes odd-flash {
   50%{
-    background: rgba(255,65,185,1);
-    box-shadow: 0px 2px 20px 4px rgba(255,65,185,1);
+    background: #e20c0b;
+    box-shadow: 0 2px 20px 4px #ff0000; 
   }
   0%, 100%{
-    background: rgba(255,65,185,0.5);
-    box-shadow: 0px 2px 20px 4px rgba(255,65,185,0.3);
+    background: #e20c0b;
+    box-shadow: 0 2px 20px 4px rgba(234, 21, 21, 0.3);
   }
 }
 </style>
