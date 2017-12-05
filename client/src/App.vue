@@ -1,5 +1,8 @@
 <template>
   <div id="snow">
+    <ul class="wire">
+      <li v-for="x in 25" :key="x"></li>
+    </ul>
     <h1 class="title">Smithtown Fire Department</h1>
     <br />
     <router-view></router-view>
@@ -13,8 +16,8 @@ export default {
 </script>
 
 <style>
-body { background-color:#333; }
 .title {
+  margin-top:100px;
   align-self: flex-start;
   flex-basis: 100%;
 }
@@ -34,37 +37,105 @@ h1 {
   align-items: stretch;
 	background: none;
 	font-family: Androgyne;
-	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
 	z-index:1;
-	-webkit-animation: snow 10s linear infinite;
-	-moz-animation: snow 10s linear infinite;
-	-ms-animation: snow 10s linear infinite;
-	animation: snow 10s linear infinite;
-  padding-bottom: 30px;
+	background-color:#000f2ff2; 
+	background-image: url('assets/snow.png'), url('assets/snow2.png'), url('assets/snow3.png');
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
 }
 @keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
+
 @-moz-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
+
 @-webkit-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
+
 @-ms-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.wire{
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: -80px;
+  border-bottom: 3px solid #222;
+  height: 100px;
+}
+
+.wire li{
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  display: inline-block;
+  width: 15px;
+  height: 30px;
+  border-radius: 50%;
+  top: 102px;
+  background: #fff;
+  /*animation here*/
+  animation-name: even-flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.wire li:nth-child(odd){
+  animation-name: odd-flash;
+}
+
+.wire li::before{
+  content: "";
+  position: absolute;;
+  width: 14px;
+  height: 10px;
+  border-radius: 4px;
+  top: -5px;
+  left: 0;
+  background: #444;
+}
+
+@keyframes even-flash {
+  0%, 100%{
+    background: rgba(255,230,65,1);
+    box-shadow: 0px 2px 20px 4px rgba(255,230,65,1);
+  }
+  50%{
+    background: rgba(255,230,65,0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255,230,65,0.3);
+  }
+}
+
+@keyframes odd-flash {
+  50%{
+    background: rgba(255,65,185,1);
+    box-shadow: 0px 2px 20px 4px rgba(255,65,185,1);
+  }
+  0%, 100%{
+    background: rgba(255,65,185,0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255,65,185,0.3);
+  }
 }
 </style>
