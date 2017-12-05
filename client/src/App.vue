@@ -71,10 +71,12 @@ h1 {
 }
 
 *{
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 .wire{
+  overflow-x:visible;
   text-align: center;
   white-space: nowrap;
   position: absolute;
@@ -86,6 +88,7 @@ h1 {
 }
 
 .wire li{
+  overflow-x: hidden;
   position: relative;
   list-style: none;
   margin: 0 15px;
