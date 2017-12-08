@@ -1,11 +1,8 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="child">
-        <h3 style="color: white">Pinch to Zoom</h3>
-        <canvas id="mycanvas"></canvas>
-      </div>
-    </div>
+  <div class="child">
+    <canvas id="mycanvas"></canvas>
+    <h3 style="color: white" v-if="(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(userAgent))">Pinch to Zoom</h3>
+    <h3 style="color: white" v-else>Click to Zoom</h3>    
   </div>
 </template>
 
@@ -26,7 +23,7 @@ export default {
 
       path: map,
       momentum: true,
-      zoomMax: 1,
+      zoomMax: 6,
       doubletap: true,
       onZoomEnd: function (zoom, zoomed) {
         console.log('---> is zoomed: %s', zoomed)
@@ -39,6 +36,11 @@ export default {
     console.log(pinchZoom)
   },
   methods: {
+  },
+  computed: {
+    userAgent () {
+      return navigator.userAgent
+    }
   }
 }
 </script>
@@ -46,22 +48,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #mycanvas {
-  height: 200px;
-  width: 400px
-}
-
-.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+  height: 300px;
+  width: 600px
 }
 
 .child {
@@ -78,5 +66,14 @@ export default {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 500px) {
+  canvas {
+    transition: -webkit-transform .5s ease;
+}
+
+canvas:active {
+    -webkit-transform: scale(5);
+}
 }
 </style>

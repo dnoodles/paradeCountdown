@@ -8996,11 +8996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dnudelman\\Desktop\\paradeCountdown\\BoilerPlate.csproj",
+      "projectUniqueName": "c:\\Users\\dnudelman\\Desktop\\paradeCountdown\\BoilerPlate.csproj",
       "projectName": "BoilerPlate",
-      "projectPath": "C:\\Users\\dnudelman\\Desktop\\paradeCountdown\\BoilerPlate.csproj",
+      "projectPath": "c:\\Users\\dnudelman\\Desktop\\paradeCountdown\\BoilerPlate.csproj",
       "packagesPath": "C:\\Users\\dnudelman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dnudelman\\Desktop\\paradeCountdown\\obj\\",
+      "outputPath": "c:\\Users\\dnudelman\\Desktop\\paradeCountdown\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

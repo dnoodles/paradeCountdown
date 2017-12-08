@@ -4,9 +4,10 @@
       <ul class="wire">
         <li style="over" v-for="x in Math.round(screenWidth / 50)" :key="x"></li>
       </ul>
-      <h1 class="title">Smithtown Fire Department</h1>
-      <br />
-      <router-view></router-view>
+      <div class="container">
+        <h1 class="title">Smithtown Fire Department</h1>
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -87,7 +88,6 @@ export default {
 }
 
 h1 {
-  text-shadow: 2px 2px 5px green;
   color: rgba(252, 0, 0, 0.5882352941176471);
   text-transform: uppercase;
   text-align: center;

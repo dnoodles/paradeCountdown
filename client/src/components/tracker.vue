@@ -1,13 +1,7 @@
 <template>
   <div>
-    <div id="countdownDiv">
-      <div class="container">
-        <div class="child">
-          <button @click="trackStart">Start Tracker</button>
-          <h1 style="color: white">{{ 'Latitude: ' + lat + 'Longitude: ' + lon}}</h1>
-        </div>
-      </div>
-    </div>
+    <button @click="trackStart">Start Tracker</button>
+    <h1 style="color: white">{{ 'Latitude: ' + lat + 'Longitude: ' + lon}}</h1>
   </div>
 </template>
 
