@@ -16,6 +16,7 @@
         </div>
       </div>
       <h2>Christmas Parade Countdown</h2>
+      <h5>Tap To See The Map</h5>
     </div>
   </div>
 </template>
@@ -74,16 +75,14 @@ export default {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-
-h1 {
+h5 {
+  text-shadow: 2px 2px 5px green;
   color: rgba(252, 0, 0, 0.5882352941176471);
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5rem;
-  letter-spacing: .3rem;    
 }
-
 h2 {
+  text-shadow: 2px 2px 5px red;
   color: rgba(4, 160, 4, 0.7803921568627451);
   text-transform: uppercase;
   text-align: center;

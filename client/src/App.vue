@@ -1,14 +1,14 @@
 <template>
-<div>
-  <div id="snow">
-    <ul class="wire">
-      <li style="over" v-for="x in Math.round(screenWidth / 50)" :key="x"></li>
-    </ul>
-    <h1 class="title">Smithtown Fire Department</h1>
-    <br />
-    <router-view></router-view>
+  <div @click="$router.push({name: 'map'})">
+    <div id="snow">
+      <ul class="wire">
+        <li style="over" v-for="x in Math.round(screenWidth / 50)" :key="x"></li>
+      </ul>
+      <h1 class="title">Smithtown Fire Department</h1>
+      <br />
+      <router-view></router-view>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -18,6 +18,12 @@ export default {
     screenWidth () {
       return window.screen.width
     }
+  },
+  mounted () {
+    this.$router.push({name: 'christmasParadeCountdown'})
+    document.addEventListener('touchmove', function (event) {
+      if (event.scale !== 1) { event.preventDefault() }
+    }, false)
   }
 }
 </script>
@@ -81,11 +87,16 @@ export default {
 }
 
 h1 {
+  text-shadow: 2px 2px 5px green;
   color: rgba(252, 0, 0, 0.5882352941176471);
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .3rem;    
+}
+
+html {
+  touch-action: none;
 }
 
 #snow{
