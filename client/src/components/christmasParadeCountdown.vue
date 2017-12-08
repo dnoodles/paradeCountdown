@@ -1,22 +1,21 @@
 <template>
   <div>
     <div id="countdownDiv">
-      <h2>Christmas Parade Countdown</h2>
-      <!--<h3 id="countdown">{{weeks + (weeks === 1 ? ' Week ' : ' Weeks ')}}</h3>-->
       <div class="container">
         <div class="child">
-          <h3 class="countdown">{{days + (weeks*7)}}</h3>
-          <h3 class="countdown bottomMargin">{{days === 1 ? ' day  ' : ' days '}}</h3>
+          <h3 class="countdown_green">{{daysCalc}}</h3>
+          <h3 class="countdown">{{daysCalc === 1 ? ' day  ' : ' days '}}</h3>
           <h3 class="countdown_green">{{minutes}}</h3>
-          <h3 class="countdown_green">{{minutes === 1 ? ' minute  ' : ' minutes '}}</h3>
+          <h3 class="countdown">{{minutes === 1 ? ' minute  ' : ' minutes '}}</h3>
         </div>
         <div class="child">
-          <h3 class="countdown">{{hours}}</h3>
-          <h3 class="countdown bottomMargin">{{hours === 1 ? ' hour  ' : ' hours '}}</h3>
+          <h3 class="countdown_green">{{hours}}</h3>
+          <h3 class="countdown">{{hours === 1 ? ' hour  ' : ' hours '}}</h3>
           <h3 class="countdown_green">{{seconds}}</h3>
-          <h3 class="countdown_green">{{seconds === 1 ? ' second  ' : ' seconds '}}</h3>
+          <h3 class="countdown">{{seconds === 1 ? ' second  ' : ' seconds '}}</h3>
         </div>
       </div>
+      <h2>Christmas Parade Countdown</h2>
     </div>
   </div>
 </template>
@@ -60,6 +59,11 @@ export default {
       this.minutes = parseInt(secondsLeft / 60)
       this.seconds = parseInt(secondsLeft % 60)
     }, 1000)
+  },
+  computed: {
+    daysCalc () {
+      return (this.weeks * 7) + this.days
+    }
   }
 }
 </script>
@@ -119,11 +123,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-}
-
-.bottomMargin {
-  margin-bottom: 25%
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .countdown {

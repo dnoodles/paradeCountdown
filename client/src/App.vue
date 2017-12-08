@@ -1,30 +1,37 @@
 <template>
+<div>
   <div id="snow">
     <ul class="wire">
-      <li style="overflow: hidden;" v-for="x in 25" :key="x"></li>
+      <li style="over" v-for="x in Math.round(screenWidth / 50)" :key="x"></li>
     </ul>
     <h1 class="title">Smithtown Fire Department</h1>
     <br />
     <router-view></router-view>
   </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  computed: {
+    screenWidth () {
+      return window.screen.width
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style>
+
 .wire{
-  overflow-x: visible;
-  overflow-y: visible;  
+  z-index: 1;
   text-align: center;
   white-space: nowrap;
   position: absolute;
   padding: 0;
   width: 100%;
-  top: -80px;
+  top: -100px;
   border-bottom: 3px solid #222;
   height: 100px;
 }
@@ -66,7 +73,7 @@ export default {
   background: #444;
 }
 .title {
-  margin-top:100px;
+  margin-top:80px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -ms-flex-preferred-size: 100%;
