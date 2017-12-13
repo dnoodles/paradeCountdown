@@ -1,23 +1,16 @@
 <template>
   <div>
-    <div id="countdownDiv">
       <div class="container">
-        <div class="child">
-          <h3 class="countdown_green">{{daysCalc}}</h3>
-          <h3 class="countdown">{{daysCalc === 1 ? ' day  ' : ' days '}}</h3>
-          <h3 class="countdown_green">{{minutes}}</h3>
-          <h3 class="countdown">{{minutes === 1 ? ' minute  ' : ' minutes '}}</h3>
-        </div>
-        <div class="child">
-          <h3 class="countdown_green">{{hours}}</h3>
-          <h3 class="countdown">{{hours === 1 ? ' hour  ' : ' hours '}}</h3>
-          <h3 class="countdown_green">{{seconds}}</h3>
-          <h3 class="countdown">{{seconds === 1 ? ' second  ' : ' seconds '}}</h3>
-        </div>
+          <h1 class="title countdown_green">{{daysCalc}}</h1>
+          <h1 class="subtitle countdown">{{daysCalc === 1 ? ' day  ' : ' days '}}</h1>
+          <h1 class="title countdown_green">{{minutes}}</h1>
+          <h1 class="subtitle countdown">{{minutes === 1 ? ' minute  ' : ' minutes '}}</h1>
+          <h1 class="title countdown_green">{{hours}}</h1>
+          <h1 class="subtitle countdown">{{hours === 1 ? ' hour  ' : ' hours '}}</h1>
+          <h1 class="title countdown_green">{{seconds}}</h1>
+          <h1 class="subtitle countdown">{{seconds === 1 ? ' second  ' : ' seconds '}}</h1>
       </div>
-      <h2>Christmas Parade Countdown</h2>
-      <h5>Tap To See The Map</h5>
-    </div>
+      <h1 class="title is-5">Christmas Parade Countdown</h1>
   </div>
 </template>
 
@@ -71,10 +64,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.title {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
 h5 {
   color: rgba(252, 0, 0, 0.5882352941176471);
   text-transform: uppercase;
@@ -90,38 +79,6 @@ h2 {
 
 h3 {
   margin: 0px;
-}
-
-.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-}
-
-.child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 3%;
-  margin-right: 3%;
 }
 
 .countdown {

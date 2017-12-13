@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button @click="trackStart">Start Tracker</button>
     <h1 style="color: white">{{ 'Latitude: ' + lat + 'Longitude: ' + lon}}</h1>
+    <h3 style="color: white">{{test}}</h3>
   </div>
 </template>
 
@@ -11,19 +11,21 @@ export default {
   data () {
     return {
       lat: null,
-      lon: null
+      lon: null,
+      test: 0
     }
   },
   methods: {
-    trackStart () {
-      window.alert('WTF')
+  },
+  mounted () {
+    setInterval(() => {
+      console.log('test')
+      this.test++
       navigator.geolocation.getCurrentPosition((position) => {
         this.lat = position.coords.latitude
         this.lon = position.coords.longitude
       })
-    }
-  },
-  mounted () {
+    }, 5000)
   },
   computed: {
   }

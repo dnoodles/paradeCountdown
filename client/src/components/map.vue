@@ -69,11 +69,11 @@ export default {
 }
 @media screen and (min-width: 500px) {
   canvas {
-    transition: -webkit-transform .5s ease;
-}
+      transition: -webkit-transform .5s ease;
+  }
 
-canvas:active {
-    -webkit-transform: scale(5);
-}
+  canvas:active {
+      -webkit-transform: scale(5);
+  }
 }
 </style>
