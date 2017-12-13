@@ -27,6 +27,7 @@ namespace BoilerPlate.Controllers
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            System.Console.WriteLine("TEST");
         }
 
         // PUT api/values/5

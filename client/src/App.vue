@@ -1,102 +1,72 @@
 <template>
-  <div @click="$router.push({name: 'map'})">
-    <div id="snow">
-      <ul class="wire">
-        <li style="over" v-for="x in Math.round(screenWidth / 50)" :key="x"></li>
-      </ul>
-      <div class="container">
-        <h1 class="title">Smithtown Fire Department</h1>
-        <router-view></router-view>
+  <div id="snow">
+    <section class="hero is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="has-text-centered">
+        <h1 class="title" id="title">Smithtown Fire Department</h1>
+      </div>      
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <router-view></router-view>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="tabs">
+          <div class="container">
+
+          </div>
+        </nav>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: 'app',
+  data () {
+    return {
+      navbarMenuHeroC: false
+    }
+  },
   computed: {
     screenWidth () {
       return window.screen.width
     }
   },
   mounted () {
-    this.$router.push({name: 'christmasParadeCountdown'})
-    document.addEventListener('touchmove', function (event) {
-      if (event.scale !== 1) { event.preventDefault() }
-    }, false)
+    if (this.$route.name !== 'tracker') {
+      this.$router.push({name: 'christmasParadeCountdown'})
+    }
   }
 }
 </script>
 
 <style>
+@import '~bulma/css/bulma.css';
 
-.wire{
-  z-index: 1;
-  text-align: center;
-  white-space: nowrap;
-  position: absolute;
-  padding: 0;
-  width: 100%;
-  top: -100px;
-  border-bottom: 3px solid #222;
-  height: 100px;
-}
-
-.wire li{
-  position: relative;
-  list-style: none;
-  margin: 0 15px;
-  display: inline-block;
-  width: 15px;
-  height: 30px;
-  border-radius: 50%;
-  top: 102px;
-  background: #fff;
-  /*animation here*/
-  -webkit-animation-name: even-flash;
-          animation-name: even-flash;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.wire li:nth-child(odd){
-  -webkit-animation-name: odd-flash;
-          animation-name: odd-flash;
-}
-
-.wire li::before{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 10px;
-  border-radius: 4px;
-  top: -5px;
-  left: 0;
-  background: #444;
-}
-.title {
-  margin-top:80px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-h1 {
-  color: rgba(252, 0, 0, 0.5882352941176471);
+#title,#subtitle {
+  color:#ff0000;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem;
-  letter-spacing: .3rem;    
-}
-
-html {
-  touch-action: none;
 }
 
 #snow{
@@ -127,12 +97,12 @@ html {
 }
 @keyframes snow {
 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
 
 @-webkit-keyframes snow {
 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
 
 @-webkit-keyframes even-flash {
