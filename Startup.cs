@@ -35,7 +35,7 @@ namespace SantaTracker
         {
             // Add framework services.
             services.AddDbContext<ParadeContext>(options =>
-              options.UseSqlServer("Data Source=\"localhost\\SQLEXPRESS01, 64355\";Database=parade;Integrated Security=False;User ID=sa;Password=spinich612;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;"));
+              options.UseSqlServer("Data Source=\"localhost\\SQLEXPRESS01, 1433\";Database=parade;Integrated Security=False;User ID=sa;Password=spinich612;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;"));
             services.AddMvc();
         }
 
