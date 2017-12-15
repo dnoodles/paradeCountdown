@@ -4,7 +4,7 @@
 // require(`./themes/app.${__THEME}.styl`)
 // 2. or, use next line to activate DEFAULT QUASAR STYLE
 // require(`quasar/dist/quasar.${__THEME}.css`)
-const __THEME = 'mat'
+let __THEME = 'mat'
 require(`quasar/dist/quasar.${__THEME}.css`)
 // ==============================
 
@@ -15,8 +15,14 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue'
 import Quasar from 'quasar'
 import router from './router'
+import VueAnalytics from 'vue-analytics'
 
 Vue.config.productionTip = false
+
+Vue.use(VueAnalytics, {
+  id: 'UA-110689316-1',
+  router
+})
 Vue.use(Quasar) // Install Quasar Framework
 
 if (__THEME === 'mat') {

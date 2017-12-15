@@ -115,9 +115,6 @@ export default {
     }
   },
   methods: {
-    invalidToPath (path) {
-      return this.invalidTo(this.getPageIndex(path))
-    }
   },
   mounted () {
   },

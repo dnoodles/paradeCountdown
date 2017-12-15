@@ -196,7 +196,7 @@ export default {
     }
   }
 }
-</script>
+</script scoped>
 <style lang="stylus" scoped>
 @import '~variables'
 .even {

@@ -21,6 +21,11 @@ export default {
         zoom: 13,
         center: {lat: 40.8549992, lng: -73.20624}
       })
+    map.data.setStyle({
+	    strokeColor: "#FF0000",
+	    strokeOpacity: 0.6,
+	    strokeWeight: 5,
+	  })
       // Define the LatLng coordinates for the outer path.
       map.data.addGeoJson({
         'type': 'FeatureCollection',
