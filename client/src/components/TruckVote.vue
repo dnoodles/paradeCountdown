@@ -2,7 +2,7 @@
   <div class="">
     <q-card inline class="bigger" flat>
       <q-card-media>
-        <img src="~assets/quasar-logo-full.svg">
+        <img src="">
       </q-card-media>
       <q-card-title>
         Cafe Basilico

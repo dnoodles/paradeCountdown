@@ -6,11 +6,7 @@
       </q-card-title>
       <q-card-main>
         <div class="container row justify-between">
-          <div class="col-6 even">
-            <h3>{{daysCalc}}</h3>
-            <h5>{{daysCalc === 1 ? ' day  ' : ' days '}}</h5>
-          </div>
-          <div class="col-6 even">
+          <div class="col-12 even">
             <h3>{{hours}}</h3>
             <h5 >{{hours === 1 ? ' hour  ' : ' hours '}}</h5>
           </div>
